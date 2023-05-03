@@ -1,9 +1,9 @@
-package Algorythm;
+package Algorythm.Day2;
 
 import java.io.IOException;
 import java.util.Scanner;
 
-public class Main {
+public class Algo_String10_StringBellCount {
     public static void main(String[] args) throws IOException {
         // 5622번
         // 상근이의 할머니는 아래 그림과 같이 오래된 다이얼 전화기를 사용한다.
