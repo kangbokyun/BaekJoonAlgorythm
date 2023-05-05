@@ -1,9 +1,9 @@
-package Algorythm;
+package Algorythm.Day3;
 
 import java.io.IOException;
-import java.util.Scanner;
+	import java.util.Scanner;
 
-public class Main {
+public class Algo_String10_StringEnter {
 	public static void main(String[] args) throws IOException {
 		// 11718번
 		// 입력 받은 대로 출력하는 프로그램을 작성하시오.
