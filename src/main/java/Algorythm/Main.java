@@ -8,17 +8,29 @@ public class Main {
 	public static void main(String[] args) throws IOException {
 		// 2차원 배열 세로읽기
 		Scanner sc = new Scanner(System.in);
-		String[] doubleArray = new String[5];
 
-		for(int i = 0; i < 5; i++) {
-			doubleArray[i] = sc.next();
+		// 5줄 총 15개 2차원 배열 선언
+		char[][] str = new char[5][15];
+
+		// 입력받은 문자들 그대로 출력해주기
+		String input = "";
+		for (int i = 0; i < str.length; i++) {
+			input = sc.next();
+			// 15개 문자 넣기
+			for (int j = 0; j < input.length(); j++) {
+				str[i][j] = input.charAt(j);
+				// System.out.print(str[i][j]); // 입력받은 문자들 그대로 출력해주기
+			}
+			// System.out.println();
 		}
-		for(int i = 0; i < 5; i++) {
-			for(int j = 0; j < 5; j++) {
-				if(j < 5 && doubleArray[j].trim().length() < 5) {
-					System.out.print(doubleArray[j].charAt(i));
-					break;
-				}
+
+		// 세로로 출력
+		for (int i = 0; i < 15; i++) { //한줄에 최대 15개
+			for (int j = 0; j < 5; j++) { //총 5줄
+				if (str[j][i] == '\0') //빈문자열이면 출력하지 않기
+					continue;
+				System.out.print(str[j][i]);
+
 			}
 		}
 	}
